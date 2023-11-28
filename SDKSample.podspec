@@ -25,6 +25,6 @@ s.source = { :git => "https://github.com/rakezbohara/sdksample.git", :branch => 
 # 7
 
 # 8
-s.vendored_frameworks = "*.{framework}"
+s.vendored_frameworks = "*.{xcframework}"
 
 end
