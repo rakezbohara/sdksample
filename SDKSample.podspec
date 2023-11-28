@@ -20,7 +20,7 @@ s.author = { "Rakesh Bohara" => "rakesh@google.com" }
 s.homepage = "https://github.com/rakezbohara/sdksample"
 
 # 5 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/rakezbohara/sdksample.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/rakezbohara/sdksample.git", :branch => "main"}
 
 # 7
 
