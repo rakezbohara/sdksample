@@ -1,0 +1,54 @@
+{
+	"Index": "2072",
+	"Code": "http://industrialsmart.com/schemas/scout_2072",
+	"Type": "Scout",
+	"Name": "Scout unified schema",
+	"Descr": "Describes unified A schema for Scout Fwm v2.4.9 and 2.5.2 SA Scouts",
+	"Sample": "{A,0000C6418D3100340042300246614E45,3.1.13.3100,45,18:9:1:13:3:31}",
+	"EntityAttributes": [
+		{
+			"Index": "0",
+			"Descr": "Section type indicator",
+			"DataTypeName": "string",
+			"IsRequired": true,
+			"Name": "SectionTypeSymbol",
+			"Format": "A",
+			"Sample": "A"
+		},
+		{
+			"Index": "1",
+			"Descr": "Globally unique device identifier (serial, code...)",
+			"DataTypeName": "string",
+			"IsRequired": true,
+			"Name": "Code",
+			"Sample": "0000C6418D3100340042300246614E45"
+		},
+		{
+			"Index": "2",
+			"Descr": "Firmware Version + Asset version indicator",
+			"DataTypeName": "string",
+			"IsRequired": false,
+			"Name": "FirmwareVersion",
+			"Format": "s.s.s.s",
+			"Sample": "3.1.13.3100"
+		},
+		{
+			"Index": "3",
+			"Descr": "Sleep Interval, in min",
+			"DataTypeName": "int",
+			"IsRequired": false,
+			"Name": "SleepInterval",
+			"Format": "nn",
+			"Sample": "45"
+		},
+		{
+			"Index": "4",
+			"Descr": "Datetime when Packet was read",
+			"DataTypeName": "DateTimeOffset",
+			"IsRequired": false,
+			"Name": "When",
+			"Format": "yy:m:d:h:m:s",
+			"Sample": "18:9:1:13:3:31"
+		}
+	]
+}

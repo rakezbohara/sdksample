@@ -1,0 +1,104 @@
+{
+	"Index": "7407",
+	"Code": "http://industrialsmart.com/schemas/sensor_7407",
+	"Type": "Primitive virtual sensor",
+	"Name": "Health Sensor unified subsection (non-charging SCs)",
+	"Descr": "Internal data readings (health data) of non-charging Scouts/Cubs and for unified Fwm starting v13 and Cub v?. (4=Cub like)",
+	"Sample": "{H,4.50,19.82,28.53,1234,2345,3456}",
+	"EntityAttributes": [
+		{
+			"Index": "0",
+			"Descr": "Section type indicator",
+			"DataTypeName": "string",
+			"IsRequired": true,
+			"Name": "SectionTypeSymbol",
+			"Format": "H"
+		}
+	],
+	"DataAttrbutes": [
+		{
+			"Index": "1",
+			"Descr": "Battery voltage value",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "d.dd",
+			"ReadingTypeCode": "BatteryVoltage",
+			"UnitCode": "V",
+			"Min": "1.50",
+			"Max": "5.50",
+			"SafeMin": "3.3",
+			"SafeMax": "5.0",
+			"Sample": "4.50"
+		},
+		{
+			"Index": "2",
+			"Descr": "Internal temperature value",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "+dd.dd",
+			"ReadingTypeCode": "InternalBoxTemperature",
+			"UnitCode": "C",
+			"Min": "-40",
+			"Max": "124",
+			"SafeMin": "-10",
+			"SafeMax": "40",
+			"Sample": "19.82"
+		},
+		{
+			"Index": "3",
+			"Descr": "Internal Humidity %. dd.dd format",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "dd.dd",
+			"ReadingTypeCode": "InternalBoxHumidity",
+			"UnitCode": "%",
+			"Min": "0",
+			"Max": "100",
+			"SafeMin": "0",
+			"SafeMax": "90",
+			"Sample": "28.53"
+		},
+		{
+			"Index": "4",
+			"Descr": "Internal X coordinate. (Can be negative)",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "-nnn",
+			"ReadingTypeCode": "InternalAccelerometerX",
+			"UnitCode": "",
+			"Min": "-555",
+			"Max": "555",
+			"SafeMin": "",
+			"SafeMax": "",
+			"Sample": "1234"
+		},
+		{
+			"Index": "5",
+			"Descr": "Internal Y coordinate. (Can be negative)",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "-nnn",
+			"ReadingTypeCode": "InternalAccelerometerY",
+			"UnitCode": "",
+			"Min": "-555",
+			"Max": "555",
+			"SafeMin": "",
+			"SafeMax": "",
+			"Sample": "2345"
+		},
+		{
+			"Index": "6",
+			"Descr": "Internal Z coordinate. (Can be negative)",
+			"IsRequired": true,
+			"DataTypeName": "double",
+			"Format": "-nnn",
+			"ReadingTypeCode": "InternalAccelerometerZ",
+			"UnitCode": "",
+			"Min": "-555",
+			"Max": "555",
+			"SafeMin": "",
+			"SafeMax": "",
+			"Sample": "3456"
+		}
+	]
+}
